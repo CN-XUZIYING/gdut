@@ -9,17 +9,18 @@ int main()
  int cCount,wCount,lCount,i,k,j,q;
  int codeCount,konCount,zhuCount;
 codeCount=konCount=zhuCount=0;
-cCount=wCount=lCount=0;
+lCount=0;wCount=cCount=0;
 i=k=1;j=q=0;
- char *fileName;
+ char fileName[20];
     char test;
     char buffer[200];
-    buffer[0]=0;
-   // printf("输入文件名：");
-   // scanf("%s",fileName);
-    //printf("\n");
+buffer[0]=0;
+   printf("输入文件名：");
+    scanf("%s",fileName);
+    printf("\n");
     FILE *xp;
-	xp=fopen("file.c","r+");
+   // if(xp)lCount=1;
+	xp=fopen(fileName,"r+");
     while ((test=fgetc(xp))!=EOF)
    {
         printf("%c",test);
@@ -44,7 +45,7 @@ i=k=1;j=q=0;
                        for(q=1;q<=k;q++)
                             if((buffer[q]>64&&buffer[q]<91)||(buffer[q]>96&&buffer[q]<123))
                                 break;
-                        if(q==k)zhuCount++;
+                        if(q==k+1)zhuCount++;
                     }
                    k++;
             }
@@ -63,14 +64,29 @@ i=k=1;j=q=0;
         cCount++;//字符数增加
    }
    codeCount=lCount-zhuCount-konCount;
-   while(buffer[k])
-           {
+   k=1;
+ /*while(buffer[k])
+           {k++;
             if(((buffer[k]>64&&buffer[k]<91)||(buffer[k]>96&&buffer[k]<123))&&(buffer[k-1]<65||(buffer[k-1]>90&&buffer[k-1]<97)||buffer[k-1]>122))
                {//字母前面一个为非字母则计数
-                   wCount++;
+                   printf("\n%c\n",buffer[k]);
+                   wCount++;printf("w:%d",wCount);
                }
-               k++;
+
+
            }
+           k=1;*/
+    if(lCount<=1)
+       while(buffer[k])
+           {
+                if(buffer[k]==0)
+                   {
+
+                   wCount=lCount=cCount=0;
+                   break;}
+
+           }
+
     fclose(xp);
     printf("\nword:%d\n",wCount);
     printf("line:%d\n",lCount);

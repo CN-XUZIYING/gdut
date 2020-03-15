@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1584263189 source:c:\users\xu\desktop\wc\wc\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<conio.h>
+	<stdlib.h>
+

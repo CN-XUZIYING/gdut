@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>四则运算生成器</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="index.js"></script>
+</head>
+<body>
+	<div class="site-header">
+		<p>软件工程结对项目</p>
+	</div>
+	<div class="box"></div>
+	<div class="premises">
+		<div class="premises-content1">
+		<p>题目数量：<input type="txt" name="subject" id="subject" placeholder="如：10"></p>
+		<p>题目范围：<input type="txt" name="range" id="range" placeholder="如：20"></p>
+		<button class="premises-submit" onclick="start()">确定</button>
+		</div>
+	</div>
+	<div class="content">
+		<p>生成题目内容如下：</p>
+		<div class="question">
+			<ul id="question-text">
+
+			</ul>
+
+		</div>
+		<div class="answer">
+			<ul id="answer-text">
+				<li>点击下方功能键查看答案</li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="content2">
+		
+		<a class="change"><button class="bleft" onclick="marking()">自动批改</button></a>
+		<a class="change"><button class="bleft2" onclick="downloadQuestion()">下载题目</button></a>
+		<a class="change"><button class="bright2" onclick="donloadAnswer()">下载答案</button></a>
+		<a class="change"><button class="bright" onclick="showAnswer()">查看完整答案</button></a>
+	</div>
+	<div id="Right">
+		<p>点击批改可查看正确题数<p>
+	</div>
+	<div id="Fault">
+		<p>点击批改可查看错误题数</p>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+body{
+	min-width:1000px;
+	background-image: linear-gradient(to bottom right ,#eaafc8,#654ea3);
+}
+.site-header{
+	width:100%;
+	text-align: center;
+	background-color:#ffffff;
+	padding:1rem;
+	color: #654ea3;
+	font-weight:bold;
+	position:fixed;
+	font-family: "STCaiyun";
+	font-size:1.5rem;
+}
+.box{
+	height:3.56rem;
+
+}
+.premises{
+	font-family: "楷体";
+	background-color:#654ea3;
+	/*background-image: linear-gradient(to bottom right, #9cbdb3 , #37b8e9);*/
+
+}
+
+.premises-content1{
+	padding-top:1rem;
+	text-align:center;
+	width:20rem;
+	margin:0 auto;
+	line-height:3rem;
+	color:#ffffff;
+}
+.premises-content1 button{
+	height:2rem;
+	width:5rem;
+	border-radius:5px;
+	border:none;
+	background-color:#ffffff; 
+	color:#654ea3;
+	text-align:center;
+	text-decoration:none;
+	cursor:pointer;
+	font-weight:bold;
+	outline:none;
+}
+.premises-content1 button:hover{
+	background-color:black;
+	color:#ffffff;
+
+}
+
+
+
+.premises-content1 input{
+	border:1px solid #ccc;
+	padding:7px 0px;
+	padding-left:0.3rem;
+	border-radius:3px;
+}
+.content{
+	width:60%;
+	height:38rem;
+	margin:0 auto;
+	line-height:2rem;
+	padding-top:2rem;
+}
+.question{
+	float:left;
+	background-color:#ececec;
+	height:35rem;
+	width: 50%;
+	box-shadow:-2px 3px 5px 0px gray;
+	
+	padding-left: 2rem;
+	overflow:auto;
+}
+.question input{
+	border:none;
+	border-bottom:1px solid black;
+	background:transparent;
+	outline:medium;
+	padding-left:1rem;
+	text-align:center;
+	font-size:1.2rem;
+	width:7rem;
+
+
+}
+.answer{
+	float:right;
+	background-color:#ececec;
+	height:35rem;
+	width:38%;
+	box-shadow:2px 3px 5px 0px gray;
+	padding-left:2rem;
+	overflow:auto;
+}
+.content ul{
+	list-style:none;
+}
+.content2{
+	width:30rem;
+	margin:0 auto;
+	height:3rem;
+	transform:translateX(25%);
+	
+}
+.content2 button{
+	height:2rem;
+	width:auto;
+	border-radius:5px;
+	border:none;
+	background-color:#ffffff; 
+	color:#654ea3;
+	text-align:center;
+	text-decoration:none;
+	cursor:pointer;
+	font-weight:bold;
+	padding:0.5rem;
+	display:block;
+	outline:none;
+
+}
+.content2 button:hover{
+	background-color:black;
+	color:#ffffff;
+}
+.bleft{
+
+	float:left;
+}
+.bleft2{
+	float:left;
+	margin-left:1rem;
+}
+.bright2{
+	float:right;
+	margin-left:1rem;
+}
+
+.bright{
+
+	float:right;
+}
+#Right{
+	width:80%;
+	height:5rem;
+	margin:0 auto;
+	border:1px solid gray;
+	padding-left: 2rem;
+	padding-top:1rem;
+	overflow:auto;
+	background-color:#ffffff;
+	opacity:0.4;
+}
+#Fault{
+	width:80%;
+	height:5rem;
+	margin:0 auto;
+	border:1px solid gray;
+	padding-left: 2rem;
+	padding-top:1rem;
+	background-color:#ffffff;
+	opacity:0.4;
+	margin-bottom:5rem;
+	overflow:auto;
+
+}
